@@ -1,0 +1,23 @@
+<main>
+    <section class="hero-section text-center">
+      <div class="container">
+        <h1 class="display-4">Serviço de Limpeza Profissional</h1>
+        <p class="lead">Atendemos toda a região com qualidade e rapidez.</p>
+        <a routerLink="/contact" class="btn btn-primary btn-lg">Fale Conosco</a>
+      </div>
+    </section>
+  
+    <section class="container my-5">
+      <div class="row">
+        <article class="col-md-4" *ngFor="let service of services">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h2 class="h5">{{ service.title }}</h2>
+              <p>{{ service.description }}</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  

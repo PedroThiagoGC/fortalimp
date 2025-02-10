@@ -13,14 +13,16 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "serviceWorker": false,
+            "ngswConfigPath": "ngsw-config.json",
             "outputPath": "dist/angular-test",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
-            "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.css"],
-            "scripts": []
+            "assets": ["src/favicon.ico", "src/assets", "src/assets/robots.txt"],
+            "styles": ["node_modules/@fortawesome/fontawesome-free/css/all.min.css","node_modules/bootstrap/dist/css/bootstrap.min.css","src/styles.css"],
+            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"]
           },
           "configurations": {
             "production": {
@@ -79,5 +81,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "63278d8b-0875-4999-bda4-1d15a2863d1c"
   }
 }

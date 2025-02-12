@@ -11,6 +11,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { FloatingButtonComponent } from './components/floating-button/floating-button.component';
+import { LaddingPageComponent } from './components/ladding-page/ladding-page.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FloatingButtonComponent } from './components/floating-button/floating-b
     ContactComponent,
     FooterComponent,
     HomeComponent,
-    FloatingButtonComponent
+    FloatingButtonComponent,
+    LaddingPageComponent
   ],
   imports: [
     BrowserModule,

@@ -1,13 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './components/home/home.component';
-import { ServicesComponent } from './components/services/services.component';
-import { ContactComponent } from './components/contact/contact.component';
+import { LaddingPageComponent } from './components/ladding-page/ladding-page.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'services', component: ServicesComponent },
-  { path: 'contact', component: ContactComponent }
+  { path: '', component: LaddingPageComponent }
+  
 ];
 
 @NgModule({
